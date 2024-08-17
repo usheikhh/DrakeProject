@@ -36,5 +36,5 @@ This project uses port 3000 on your local network
 
 
 ## DEMO
-
+[![Demo](https://github.com/usheikhh/DrakeProject/blob/main/public/explicitIcon.png)](https://github.com/usheikhh/DrakeProject/blob/main/DEMO2.mov)
 
