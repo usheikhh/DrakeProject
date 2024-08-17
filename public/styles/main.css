@@ -1,0 +1,172 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+    margin-top: 1rem;
+}
+
+.block{
+    background-color: rgb(245, 242, 242);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0; /* Remove margin */
+    height: 100%;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.blank{
+    margin-bottom: 0.5em;
+}
+
+
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.col-md-6.no-gutters {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+
+
+.grey-box {
+  background-color: rgb(192, 191, 190);;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0; /* Remove margin */
+  height: 100%; /* Ensure full height within flex item */
+}
+.container-flex {
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center the boxes horizontally */
+  align-items:flex-start; /* Center the boxes vertically */
+
+}
+.box-wrapper {
+  display: flex; /* Enable flexbox */
+  gap: 10px; /* Small gap between the boxes */
+  align-items: flex-end;
+  
+}
+.split {
+  flex: 1; /* Ensure equal width of the boxes */
+  max-width: 70%; /* Ensure the boxes do not exceed 45% of the container width */
+}
+
+.drakeImage{
+  display: flex;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+
+
+.content {
+  flex: 1; /* Take up remaining space */
+}
+.full-width-box {
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.inner-element {
+  background-color: rgb(192, 191, 190);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content:space-between
+}
+
+.first-box {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: -30px;
+  margin-top: 60px;
+}
+
+.first-box-inner-element{
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+footer{
+  position:relative;
+  bottom: 0;
+  background-color:rgb(250, 250, 250);
+}
+
+.top10img{
+  border-radius: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.search-container{
+  margin: 50px auto;
+  background: rgb(192, 191, 190);
+  color: black;
+  border-radius: 25px;
+  position: relative;
+  width: 850px;
+  font-size: 22px;
+}
+
+#search{
+  width: 100%;
+  border: none;
+  height: 50px;
+  background: rgb(192, 191, 190);;
+  color: black;
+  border-radius: 25px;
+  padding: 0px 40px 0px 25px;
+  font-size: 22px;
+}
+
+#search:focus{
+  outline: none;
+}
+
+.search-icon{
+  position: absolute;
+  background: none;
+  top: 13px;
+  right: 20px
+}
+
+.search-icon i {
+  color: white;
+  font-size: 22px;
+}
+
+.suggestions-wrap .suggestions{
+  margin: 0;
+  padding: 0;
+}
+
+.suggestions-wrap .suggestions li {
+  list-style: none;
+  border-radius:  3px;
+  padding: 8px 25px;
+  transition: all .5s linear;
+}
+
+.suggestions-wrap{
+  display: none;
+}
+
+.suggestions-wrap.show{
+  display: block;
+}
+
+.suggestions-wrap .suggestions li:hover{
+  background: gray;
+}

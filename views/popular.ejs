@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles/main.css" />
+    <title>Popular</title>
+
+
+
+
+    
+</head>
+<body>
+  <header><div class = "blank"><%- include("partials/header.ejs") %></div></header>
+
+    
+
+
+
+    <div class="container-fluid container-flex">
+      <div class="box-wrapper">
+        <div class="grey-box split">
+          <!-- Add your image and text here -->
+           
+          <img class ="drakeImage" src= "<%= images[0].url %>" height ="435" width="435"> 
+        </div>
+        <div class="grey-box split">
+          <!-- Add your image and text here -->
+          <h2>Followers on Spotify: <%=followers%></h2>  <br>
+            <h2>Popularity on Spotify: <%=popularity%></h2>  <br>
+    
+            <h2>Genres:<br></h2>
+            
+            <% for (const genre of genres){%>
+                <h3><li>  <%=genre%> </li></h3>
+                <%  }; %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="content">
+    <div class="container-fluid first-box">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="first-box-inner-element">
+            <h1>Top 10 Popular Songs</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <% for(const track of trackList){%>
+    <div class="content">
+      <div class="container-fluid full-width-box">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-element">
+              <img class = "top10img" src = <%=track.pic%> height="100" width = "100">
+
+              <div>
+              <h2><%=track.trackName%><% if (track.explicit){%>
+                <img src ="explicitIcon.png" height = "25" width="25">
+              <%}%></h2>
+
+
+              <h2> 
+              <%if(track.duration%60<10){ %>
+                <%=Math.floor(track.duration/60)%>:0<%=track.duration%60%>
+                <%}else{ %>
+                  <%=Math.floor(track.duration/60)%>:<%=track.duration%60%>
+                 <%}%> 
+              </h2>
+            </div>
+              
+              <h2>Popularity: <%=track.popularity%></h2>
+
+              
+
+
+              <!-- <% if (track.preview){%>
+                <h2><%=track.preview%></h2>
+              <%}%> -->
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <%}%>
+
+
+  
+
+  
+
+
+
+
+
+
+    <footer><%- include("partials/footer.ejs") %></footer>
+</body>
+
+
+  
+</html>
